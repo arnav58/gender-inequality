@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-container {
+    width: 100%;
+    height: 50px;
+    background: white;
+    box-shadow: 0 10px 10px -8px rgba(0,0,0,.5);
+}
+
+.nav-container .project-title {
+    margin: 10px 0px 10px 100px;
+    font-size: 20px;
+}
+
+.page-container {
+    background: #fff;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.viz-container {
+    width: 1560px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.viz-question .controls {
+    padding: 20px;
+    margin: 0 auto;
+    width: 750px;
+}
+
+.viz-question .controls select {
+    margin: 50px 50px 0 50px;
+    width: 250px;
+    height: 40px;
+    text-align-last: center;
+}
+
+.viz-question .chart-container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.viz-question .viz-header {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.viz-question .description {
+    width: 980px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.viz-question .info {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.viz-question .chart-header {
+    font-size: 16px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#wageGap .reset-chart-btn {
+    width: 50px;
+    position: relative;
+    left: 100px;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+.page-controls {
+    font-size: 42px;
+    padding: 20px;
+}
+
+.page-controls > div {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.page-controls .go-next {
+    float: right;
+}
+
+.country-wage-group.clickable {
+    cursor: pointer;
+}
+
+.custom-tooltip {
+    position: absolute;
+    z-index: 1200;
+    visibility: hidden;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 12px;
+}
+
+.custom-tooltip > div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-tooltip div span, .chart-header span {
+    font-weight: 800;
+}
+
+.indicator {
+    margin-left: 5px;
+}
+
+#wageGapTooltip .click-directive {
+    position: relative;
+    background: red;
+    top: 5px;
+    border-radius: 10px;
+    color: white;
+}

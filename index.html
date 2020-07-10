@@ -1,0 +1,200 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under-representation of women</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://use.fontawesome.com/a72d972f61.js"></script>
+</head>
+
+<body>
+    <header class="nav-header">
+        <nav class="navbar navbar-inverse">
+            <div class="nav-container">
+                <div class="project-title">UNDER-REPRESENTATION OF WOMEN</div>
+            </div>
+        </nav>
+    </header>
+    <div class="page-container">
+        <div class="viz-container" id="intro" style="margin-top: 150px;">
+            <section class="viz-question" id="intro-section">
+                <div class="viz-header"><h4>UNDER-REPRESENTATION OF WOMEN</h4></div>
+                <div class="info"><h6>Arnav Jain</h6></div>
+                <div class="info"><h6>30176638</h6></div>
+                <div class="description">
+                    The under representation of women in various facets of the society has been a constant point of concern for many.
+                    Women not getting equal opportunities in society is a blatant violation of their rights as a human being and so
+                    it is important to uncover just to what extent this problem persists in the modern-day world. In order to attain an
+                    estimate of how well or poorly the women are placed in the society, as compared to their opposite gender, some key
+                    indicators that may be selected to highlight the gender tilt could be looking at how many women are <strong>employed in
+                    various sectors</strong> such as agricultural sector, industrial sector and service sector as opposed to their opposite gender. Another key
+                    indicator could be looking at the <strong>income gap</strong> between the two genders and ultimately, looking at how strongly are
+                    <strong>women represented in various decision-making bodies</strong> across the globe could add some finer detail as well.
+                </div>
+                <div class="description">
+                    This project is an attempt to simply some of these highly concerning statistics and inform the viewers about the seriousness of the situation.
+                    In the following tabs to come, we shall discuss the gender tilt in the society by answering the three questions identified which were the key indicators of this imbalance.
+                    We shall also be able to interact with the charts and drill down into how each region and country is doing on each of these parameters. <strong>Are you sitting down for this?</strong>
+                </div>
+                <div class="page-controls">
+                    <div class="go-back">&nbsp;</div>
+                    <div class="go-next navigate" data-to="question1" title="Explore"><i class="fa fa-chevron-circle-right"></i></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="viz-container" id="question1" style="display: none;">
+            <section class="viz-question" id="employmentBySector">
+                <div class="viz-header"><h4>Q. What is the distribution of employed population based on gender in different countries across various sectors? (agricultural, industrial and service sectors).</h4></div>
+                <div class="description">
+                    The chart below lets you drill down into how the countries in various regions do when accounted for the percentage of population employed within Agricultural, Industrial and Service sectors.
+                    <br/><br/>
+                    The <strong>Agricultural sector</strong> consists of jobs which require less skill and more of manual labour, such as farming, picking, harvesting etc.
+                    <br/>
+                    The <strong>Service sector</strong> consists of jobs which require soft skills, such as working in a restaurant, working as a secretary, working in a call center etc.
+                    <br/>
+                    The <strong>Industrial sector</strong> consists of jobs which require skilled labour, such as welding, construction, jobs in a factory etc.
+                </div>
+                <div class="description" style="font-size: 12px;"><strong>hover over</strong> the country bars to analyse their values.</div>
+                <div class="controls">
+                    <select name="sector" class="sector-select">
+                        <option value="Agricultural" selected>Agricultural</option>
+                        <option value="Service">Service</option>
+                        <option value="Industrial">Industrial</option>
+                    </select>
+
+                    <select name="region" class="region-select">
+                        <option value="Developed regions" selected>Developed regions</option>
+                        <option value="Southern Asia" >Southern Asia</option>
+                        <option value="Northern Africa">Northern Africa</option>
+                        <option value="Oceania">Oceania</option>
+                        <option value="Sub-Saharan Africa">Sub-Saharan Africa</option>
+                        <option value="Latin America and the Caribbean">Latin America and the Caribbean</option>
+                        <option value="Caucasus and Central Asia">Caucasus and Central Asia</option>
+                        <option value="Western Asia">Western Asia</option>
+                        <option value="South-eastern Asia">South-eastern Asia</option>
+                        <option value="Eastern Asia">Eastern Asia</option>
+                    </select>
+                </div>
+                <div id="employmentSectorTooltip" class="custom-tooltip">
+                    <div class="country-name">Country Name: <span class="country-name-text"></span>  </div>
+                    <div class="male-employment-percent">%age of Men employed: <span class="male-emp-text"></span></div>
+                    <div class="female-employment-percent">%age of Women employed: <span class="female-emp-text"></span></div>
+                    <div class="employment-percent-diff">%age difference Women to Men: <span class="difference-text"></span><span class="indicator increase" style="color: green;"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span><span class="indicator decrease" style="color: red;"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span></div>
+                </div>
+                <div class="chart-header">Employment Comparision of Genders per Country</div>
+                <div class="chart-container" id="employmentBySectorChart"></div>
+                <div class="page-controls">
+                    <div class="go-back navigate" data-to="intro" title="About"><i class="fa fa-chevron-circle-left"></i></div>
+                    <div class="go-next navigate" data-to="question2" title="Next Question"><i class="fa fa-chevron-circle-right"></i></div>
+                </div>
+                <div class="viz-header"><strong>Key Inferences</strong></div>
+                <div class="description">
+                    From the above plot, it is easy to see how the countries that are more dependent on agriculture (countries in Southern and Central Asia) tend to have a higher percentage of their female population employed in the agricultural sector as compared to their opposite gender, but with exception to this, all other regions see a higher involvement by men in the agricultural sector.
+                </div>
+                <div class="description">
+                    The service sector plots show how most progressive countries, i.e. excluding countries that still are a patriarchal society (countries in Southern Asia), all other countries see a higher involvement from their female population in the service sector than the male population.
+                </div>
+                <div class="description">
+                    The industrial sector plots consistently show a higher involvelemt from the male population of the countries than the female population most likely attributable to the false idea of women being weaker than men and being incompetent. This plot highlights a very concerning issue of how women are not afforded equal opportunities as men in the society.
+                </div>
+            </section>
+        </div>
+
+        <div class="viz-container" id="question2" style="display: none;">
+            <section class="viz-question" id="wageGap">
+                <div class="viz-header"><h4>Q. What is the gap between the wages of a woman and a man in different countries?</h4></div>
+                <div class="description">
+                    Having talked about how the two genders are employed across the globe in various sectors, we not turn our focue to the income gap between the two genders.
+                    The chart below lets you drill down into how the countries do when accounted for the income of the two genders and whether there is a gap that needs to be bridged.
+                </div>
+                <div class="description" style="font-size: 12px;"><strong>hover over</strong> the income bubbles to analyse their values per country.</div>
+                <div class="description" style="font-size: 12px; margin-top: 5px;"><strong>click on</strong> the income bubbles in default view to get a breakdown of income of the two genders in various jobs for a country.</div>
+                <div id="wageGapTooltip" class="custom-tooltip">
+                    <div class="meta country-name">Country Name: <span class="country-name-text"></span></div>
+                    <div class="meta occupation-name">Occupation Name: <span class="occupation-name-text"></span></div>
+                    <div class="male-wage">Male daily income: <span class="male-wage-text"></span></div>
+                    <div class="female-wage">Female daily income: <span class="female-wage-text"></span></div>
+                    <div class="wage-gap">Daily Wage Gap: <span class="difference-text"></span><span class="indicator increase" style="color: green;"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span><span class="indicator decrease" style="color: red;"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span></div>
+                    <div class="click-directive">CLICK TO DRILL DOWN</div>
+                </div>
+                <div class="reset-chart-btn" title="Reset Chart"><i class="fa fa-undo"></i></div>
+                <div class="chart-header overall">Gender Wage Gap per Country</div>
+                <div class="chart-header drill-down" style="display: none;">Occupation Wage Gap breakdown in: <span class="country-name"></span></div>
+                <div class="chart-container" id="wageGapChart"></div>
+                <div class="page-controls">
+                    <div class="go-back navigate" data-to="question1" title="Previous Question"><i class="fa fa-chevron-circle-left"></i></div>
+                    <div class="go-next navigate" data-to="question3" title="Next Question"><i class="fa fa-chevron-circle-right"></i></div>
+                </div>
+                <div class="viz-header"><strong>Key Inference</strong></div>
+                <div class="description">
+                    From the above plot, it is easy to see how the gap in the income of the two genders is consistent across the globe and across all types of jobs. The plot highlights the issue of how women are not paid the same amount of money as men in the society for the same job. It has always been a pressing issue which is still very much at our hands since all of the statistics reveal how the women are treated unfairly everywhere in the world.
+                </div>
+            </section>
+        </div>
+
+        <div class="viz-container" id="question3" style="display: none;">
+            <section class="viz-question" id="womenInParliament">
+                <div class="viz-header"><h4>Q. How strongly are women represented in politics and decision making infrastructures across the world?</h4></div>
+                <div class="description">
+                    Finally, in order to understand how well women are represented in various decision making bodies around the world (the parliament), the below plot is designed to highlight the countries that are doing well when it comes to equal representation of women in the parliament bodies and the countries that are not. The visualization shows a map of the choloroplethic map of the world with a red gradient depicting the percentage of parliament bodies that consists of women.
+                </div>
+                <div class="description" style="font-size: 12px; margin-bottom: 50px;"><strong>hover over</strong> the country to analyse the percentage of parliament bodies consisting of women.</div>
+                <div id="parliamentTooltip" class="custom-tooltip">
+                    <div class="country-name">Country Name: <span class="country-name-text"></span>  </div>
+                    <div class="women-parliament-percent">Women in parliament: <span class="women-parliament-text"></span></div>
+                </div>
+                <div class="chart-header">Distribution of Women in Parliament around the world</div>
+                <div class="chart-container" id="womenInParliamentChart"></div>
+                <div class="page-controls">
+                    <div class="go-back navigate" data-to="question2" title="Previous Question"><i class="fa fa-chevron-circle-left"></i></div>
+                    <div class="go-next navigate" data-to="conclusion" title="Conclusion"><i class="fa fa-chevron-circle-right"></i></div>
+                </div>
+                <div class="viz-header"><strong>Key Inference</strong></div>
+                <div class="description">
+                    From the above plot, it is easy to see how in most of the countries around the world, women are represented by merely 25% or less in the decision making bodies which leads to them having little say in the schemes that the goverenment rolls out to its citizens. Lesser decision making representation also leads to lesser pressure over some of the major concerns regarding women inequality around the world, leaving it a completely helpless cause to try and bring along an era of equality amongst men and women.
+                </div>
+            </section>
+        </div>
+        <div class="viz-container" id="conclusion" style="margin-top: 150px; display: none;">
+            <section class="viz-question" id="conclusion-section">
+                <div class="viz-header"><h4>Conclusion</h4></div>
+                <div class="description">
+                    Looking at all of these plots and the insights, it is pretty evident how the world is off balance when it comes to
+                    affording equal opportunities to both the genders. Women are globally not participating nearly as much in
+                    employment in the skilled sector as men are, have a higher income gap year on year and are not well represented
+                    enough to assert power and make the necessary changes. A lot of initiatives have been taken in this regard such
+                    as gender diverse hiring by corporate firms, but it is still a hurdle that we as a species need to leap over and
+                    establish a balance in the world.
+                </div>
+                <div class="description">
+                    These plots also highlight how various regions perform on various parameters and allow an insight into the
+                    culture and the traditions of the regions which may be leading to such an imbalance in the society. These help us
+                    plan more meticulously when trying to tackle such a problem since we gain access to more personalized
+                    information about the region and the countries.
+                </div>
+                <div class="page-controls">
+                    <div class="go-back navigate" data-to="question3" title="Previous Question"><i class="fa fa-chevron-circle-left"></i></div>
+                    <div class="go-next">&nbsp;</div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="assets/json/employment_by_sector_data.js"></script>
+<script src="assets/json/wage_gap_by_gender_data.js"></script>
+<script src="assets/json/women_in_parliament_data.js"></script>
+<script src="assets/js/data_filtering.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/render_employment_by_sector_chart.js"></script>
+<script src="assets/js/render_gender_wage_gap_chart.js"></script>
+<script src="assets/js/render_women_in_parliament_chart.js"></script>
+<script src="assets/js/main.js"></script>
+</html>
